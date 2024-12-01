@@ -16,15 +16,13 @@ A Flask-based web application for scanning network hosts, identifying open ports
 - Provides an easy-to-use interface for initiating scans and viewing results.
 ---
 
-## Installation
+## Getting Started
 ### Prerequisites
 
  - Python 3.10+
  - nmap command-line tool
 
----
-
-## Steps
+### Steps
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/network-scanner.git

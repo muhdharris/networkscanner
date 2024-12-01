@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scan Results for {{ result['scan'].keys() | first }}</h1>
+    <p><strong>Scan Command:</strong> {{ result['nmap']['command_line'] }}</p>
+    <p><strong>Scan Duration:</strong> {{ result['nmap']['scanstats']['elapsed'] }} seconds</p>
+    
+    <h2>Open Ports</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Port</th>
+                <th>State</th>
+                <th>Service</th>
+                <th>Additional Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for port, details in result['scan']['192.168.56.1']['tcp'].items() %}
+            <tr>
+                <td>{{ port }}</td>
+                <td>{{ details['state'] }}</td>
+                <td>{{ details['name'] }}</td>
+                <td>{{ details['extrainfo'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Network Scanner</title>
+</head>
+<body>
+    <h1>Welcome to the Advanced Network Scanner</h1>
+    <form action="/scan" method="post">
+        <h2>Network Scan</h2>
+        <label for="host">Host (IP or domain):</label>
+        <input type="text" id="host" name="host" required>
+        <label for="scripts">Scripts (optional):</label>
+        <input type="text" id="scripts" name="scripts">
+        <button type="submit">Start Scan</button>
+    </form>
+    <form action="/schedule_scan" method="get">
+        <h2>Schedule Scan</h2>
+        <button type="submit">Schedule a Scan</button>
+    </form>
+</body>
+</html>

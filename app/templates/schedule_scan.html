@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule Scan</title>
+</head>
+<body>
+    <h1>Schedule a Scan</h1>
+    <form action="/schedule_scan" method="post">
+        <label for="host">Host (IP or domain):</label>
+        <input type="text" id="host" name="host" required>
+        <label for="interval">Interval (in seconds):</label>
+        <input type="number" id="interval" name="interval" min="1" required>
+        <label for="scripts">Scripts (optional):</label>
+        <input type="text" id="scripts" name="scripts">
+        <button type="submit">Schedule Scan</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>

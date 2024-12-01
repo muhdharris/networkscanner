@@ -46,14 +46,14 @@ python run.py
 ---
 
 ## Usage
-1. Perform a Scan
+**1. Perform a Scan**
 - Navigate to the home page.
 - Enter the target host's IP address or domain.
 - (Optional) Specify nmap scripts for enhanced scans.
 - Submit to view the results.
-2. Vulnerability Scan
+**2. Vulnerability Scan**
 - Similar to a regular scan but focuses on identifying vulnerabilities using specific nmap scripts.
-3. Schedule a Scan
+**3. Schedule a Scan**
 - Go to the "Schedule Scan" page.
 - Enter the target host, interval (in minutes), and optional scripts.
 - Once scheduled, the scans will run automatically.

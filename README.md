@@ -64,6 +64,7 @@ python run.py
 The following libraries are required:
 
 **Flask**: Web framework
+
 **python-nmap**: Python wrapper for nmap
 
 **threading**: For managing scheduled scans

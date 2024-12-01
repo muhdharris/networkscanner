@@ -26,7 +26,7 @@ A Flask-based web application for scanning network hosts, identifying open ports
 ### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/network-scanner.git
+git clone https://github.com/muhdharris/network-scanner.git
 cd network-scanner
 ```
 2. Install dependencies:

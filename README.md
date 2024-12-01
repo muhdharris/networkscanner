@@ -41,7 +41,7 @@ python run.py
 4. Access the application at:
 
 - Local: http://127.0.0.1:5000
-- Network: http://<your-network-ip>:5000
+- Network: [http://<your-network-ip>:5000](http://<your-network-ip>:5000)
 
 ---
 
